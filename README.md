@@ -8,7 +8,7 @@ This repository contains two parts:
 
 ## Speculative Design Card Game (Web-based) [LANGUAGUE: PORTUGUESE]
 Accessible game developed for the architecture design studio.  
-[Play it here]([https://larissanegris.github.io/sigradi2025_LNS/)
+ [Play it here](https://larissanegris.github.io/sigradi2025_LNS)
 
 Game-terms Description:
 ⦁	Arc: 
