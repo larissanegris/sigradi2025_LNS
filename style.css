@@ -1,0 +1,182 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #F294C8;
+  --color-text-main: #402759;
+  --color-text-header: #402759;
+  --color-primary: #402759;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: montserrat;
+  --font-family-header: "pinot-grigio-modern", sans-serif;
+}
+
+
+.deck {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+.deck button {
+  font-family: montserrat, sans-serif;
+  width: 215px;
+  height: 300px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #84bfb4;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.btn-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.btn-subtitle {
+  font-size: 0.70em;
+  color: #222;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.deck button:hover {
+  transform: scale(1.05);
+  background-color: #F3B61F;
+}
+
+.result ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Inserindo Fonte Adobe para titulos */
+h1, h2{
+  font-family: var(--font-family-header);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-text-header)
+}  
+
+
+
+
+  
+/* Our remix on glitch button */
+
+
+/* Navigation grid */
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+
+
+.card-subtitle {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor:pointer;
+  font-weight:bold;
+  border-bottom:3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom:3px solid var(--color-secondary);
+}
